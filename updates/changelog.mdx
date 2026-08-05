@@ -5,6 +5,22 @@ icon: "clock-rotate-left"
 mode: "center"
 ---
 
+**This page is the running record of what's new**, with the portal front and center: every release that changes what creators see, what the program pays, or how the dashboard reads, in ambassador language rather than commit messages.
+
+**How it works:** entries land here every morning. A scheduled Claude routine reviews what shipped the previous day, writes it up with screenshots where they help, and publishes the entry, so by the time you start your day the newest entry below reflects yesterday's changes. Anything you read here is live in the product. If a day has no entry, nothing shipped that day.
+
+**How to read an entry:** the label is the ship date, the subtitle is the theme, and bold leads name each change. When a change alters what you should DO (a new worklist, a moved button, a new rule), the entry says so explicitly.
+
+---
+
+<Update label="August 5, 2026" description="The docs hub and the portal deep-dive">
+  **This site launched.** The ambassador hub replaced the old staff handbook: `joincharacterstudio.com/docs` now brings you here. Program guide, cohort lineup, dashboard guide, daily ops, FAQ, and this changelog, behind the site login.
+
+  **The Portal section.** Why the portal exists, every portal state with fresh screenshots, the helping-creators playbook, and the Slack request guide, because the portal is the heart of how ambassadors support the program.
+
+  **Cantina branding** landed on the site: the wordmark, the teal, the dark theme.
+</Update>
+
 <Update label="August 4, 2026" description="The reactivation release">
   The biggest single day of the program so far.
 
@@ -26,7 +42,7 @@ mode: "center"
     ![Posting activity strip](https://intent-tortoise-231.convex.cloud/api/storage/82d74e42-9cc4-43c2-ad9e-33992a14122f)
   </Frame>
 
-  **Reactivation tracking.** The waitlist panel now shows how each reactivated person came back (batch, claim email, or self-serve), when (first real signal, timestamped), and a running came-back count.
+  **Reactivation tracking.** The waitlist panel now shows how each reactivated person came back (batch, claim email, or self-serve), when (first real signal, timestamped), and a running came-back count. For ambys this doubles as the outreach list: quiet rows get a personal nudge.
 
   **Overview tiles** gained the reactivated split, and the roster got polish: real applied dates for batch-enrolled folks and single-line status pills.
 
@@ -34,11 +50,11 @@ mode: "center"
     ![Overview tiles](https://intent-tortoise-231.convex.cloud/api/storage/9aad3f8e-7c90-4021-b279-db37dfd65350)
   </Frame>
 
-  **Also that day:** the staff handbook shipped (every internal surface documented with 24 screenshots; it has since grown into this docs hub), and the Character Curriculum was single-sourced so the coming 7-video re-cut is a one-line swap with everyone's earned bonus preserved.
+  **Also that day:** the staff handbook shipped (it has since grown into this docs hub), and the Character Curriculum was single-sourced so the coming 7-video re-cut is a one-line swap with everyone's earned bonus preserved.
 </Update>
 
 <Update label="July 31, 2026" description="Cohort 8">
-  Relaunch with the flow fixes from cohort 7's first week: the full clickable checklist returned to the portal's Tasks tab, explainer video slots were added across the flow, and fresh ad links went live. Cohort 8 became the current date-chained cohort and the checklist-plus-video layout test.
+  Relaunch with the flow fixes from cohort 7's first week: **the full clickable checklist returned to the portal's Tasks tab**, explainer video slots were added across the flow, and fresh ad links went live. Cohort 8 became the current date-chained cohort and the checklist-plus-video layout test.
 
   <Frame caption="Cohort 8's funnel on the dashboard">
     ![Cohort 8 funnel](https://www.joincharacterstudio.com/docs/program-02-funnel.png)
@@ -46,15 +62,23 @@ mode: "center"
 </Update>
 
 <Update label="July 26, 2026" description="Curriculum bonus tracking">
-  The \$20 Character Curriculum bonus became fully tracked: watching is verified server-side (scrubbing to the end of a video doesn't count), progress shows live in the portal's Learn tab, and a staff roster shows who's earned it and who's been paid.
+  The \$20 Character Curriculum bonus became fully tracked in the portal's Learn tab: watching is verified server-side (scrubbing to the end of a video doesn't count), progress shows live, and a staff roster shows who's earned it and who's been paid. A bonus-first panel makes the money explicit so creators know exactly which videos pay.
+
+  <Frame caption="The Learn tab with the curriculum bonus panel">
+    ![Learn tab](https://intent-tortoise-231.convex.cloud/api/storage/afd7b602-16f0-4721-8855-aae31d8a1b9a)
+  </Frame>
 </Update>
 
 <Update label="July 24, 2026" description="The three-stage program launches">
-  Cohort 7 opened the current program to everyone: **Get Set Up** (\$40 first-week bonus plus \$2.50 per qualifying post), **Bonus Ramp** (three \$20 weekly bounties plus the \$20 curriculum bonus), and the **Official Program** (ongoing per-post pay). New landing page copy shipped the same day. Cohort 6 ran the same program earlier as an invite-only seed group.
+  Cohort 7 opened the current program to everyone: **Get Set Up** (\$40 first-week bonus plus \$2.50 per qualifying post), **Bonus Ramp** (three \$20 weekly bounties plus the \$20 curriculum bonus), and the **Official Program** (ongoing per-post pay). The portal gained the stage banner and stage-aware views, and new landing page copy shipped the same day. Cohort 6 ran the same program earlier as an invite-only seed group.
 
   <Frame caption="The landing page for the three-stage program">
     ![Landing page](https://www.joincharacterstudio.com/docs/creator-landing.png)
   </Frame>
+</Update>
+
+<Update label="July 16, 2026" description="Reliability work">
+  A scaling limit in the dashboard's heaviest queries surfaced as the cohorts grew, and got a same-day fix plus a permanent guard: the derivation behind the funnel now runs on a batched cache, and an automated health check probes the dashboard's heaviest path every half hour and alerts before staff ever see a failure.
 </Update>
 
 <Update label="July 7, 2026" description="Cohort 2 and the ops batch">
@@ -62,15 +86,27 @@ mode: "center"
 </Update>
 
 <Update label="July 1, 2026" description="Community forum upgrades">
-  Post editing with review re-check, self-serve tags, pinning, and lightweight formatting landed in the community forum, alongside the moderation queue in the dashboard's Community tab.
+  Post editing with review re-check, self-serve tags, pinning, and lightweight formatting landed in the portal's community forum, alongside the moderation queue in the dashboard's Community tab.
 </Update>
 
 <Update label="June 24, 2026" description="Official Program portal">
-  Graduates got their own portal view with the ongoing pay structure (\$250 base plus the view-bonus ladder at the time), flipped by a tag so the team controls exactly who sees it. The character showcase followed in the concept tester the next day.
+  Graduates got their own portal view with the ongoing pay structure, flipped by a tag so the team controls exactly who sees it. The character showcase followed in the portal's concept tester the next day, featuring real creator characters.
+
+  <Frame caption="The Official Program view of the portal">
+    ![Official Program portal view](https://intent-tortoise-231.convex.cloud/api/storage/1181103c-b772-47ce-91ca-e00610ec74d6)
+  </Frame>
+</Update>
+
+<Update label="June 16, 2026" description="Creator tagging">
+  The tagging system landed under the hood: status, cohort, and label tags on every creator, with expiry, driving which portal view a creator sees and which comms they get. This is the machinery behind the Official view flip and cohort scoping.
 </Update>
 
 <Update label="June 10, 2026" description="Cohort 1">
   The first cohort: 100 creators, the original 14-day sprint with a \$150 completion payout, live progress tracking in the portal, and automatic post tracking. The proving ground for everything since.
+</Update>
+
+<Update label="June 3, 2026" description="The portal's editorial redesign">
+  The portal went from functional to designed: the mission-control sprint hero with the day grid, numbered editorial sections with a scrollspy rail, redesigned identity cards in plain voice, post rows with thumbnails and sparklines, a proper support section, and a pile of mobile fixes (iOS auto-capitalization breaking handle verification, real copy-button confirmation). The visual language it established is still the portal's today.
 </Update>
 
 <Update label="Late May 2026" description="Payouts go live">
