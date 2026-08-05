@@ -30,6 +30,7 @@
         "icon": "rocket",
         "pages": [
           "program/how-it-works",
+          "program/cohorts",
           "program/creator-journey",
           "program/payouts"
         ]

@@ -22,33 +22,81 @@ The admin dashboard lives at `joincharacterstudio.com/dashboard`, behind the Can
 
 ## The one concept that explains most numbers
 
-**Almost everything is scoped to the selected cohort.** The dropdown at the top scopes nearly every number below it, so a funnel that looks wrong is very often the right funnel for the wrong cohort. The dashboard snaps to the newest launch cohort on load; audience tests (including Cohort 8R, the reactivated waitlist group) are grouped separately in the dropdown.
+**Almost everything is scoped to the selected cohort.** The dropdown at the top scopes nearly every number below it, so a funnel that looks wrong is very often the right funnel for the wrong cohort. The dashboard snaps to the newest launch cohort on load; audience tests (including Cohort 8R, the reactivated waitlist group) are grouped separately in the dropdown. See [The cohorts right now](/program/cohorts) for what each one is.
 
-## Key sections on the 14-Day Sprint tab
+## Section by section
 
-**Cohort overview** sits at the top: the selector, headline tiles (signups, downloads, room joins, waitlist history, reactivated), and the **Applicants by day** chart. The chart stacks new enrollments (teal), reactivated waitlisters (violet), and historical cap-full waitlist signups (amber), and the enrollment chip shows the open/no-cap state at a glance.
+### Cohort overview
 
-<Frame caption="Applicants by day, with the reactivation split">
+The selector, the headline tiles (signups, downloads, room joins, waitlist history, reactivated), and the **Applicants by day** chart: new enrollments (teal), reactivated waitlisters (violet), and historical cap-full waitlist signups (amber) stacked per day, with the enrollment state pinned beside it.
+
+<Frame caption="The cohort overview tiles">
+  ![Cohort overview](https://www.joincharacterstudio.com/docs/program-00-cohort.png)
+</Frame>
+
+<Frame caption="Applicants by day, program-wide">
   ![Applicants by day chart](https://intent-tortoise-231.convex.cloud/api/storage/4b2bc078-21a8-437b-8c5f-f0d3be90fb45)
 </Frame>
 
-**Action items** is the daily worklist: room adds/removals with checkoffs so two people never do the same job twice, plus the two bonus worklists ($$40 Get Set Up, $$20 curriculum).
+### Action items
 
-**The funnel** shows the share of cohort signups reaching each stage, from signup through graduation. Directly under it, the **posting activity strip** shows the raw layer behind the posts stage: who's posting, how many posts are pending review, and how many are countable right now.
+The daily worklist: room adds and removals with checkoffs so two people never do the same job twice, plus the two bonus worklists ($$40 Get Set Up, $$20 curriculum). Covered in [Daily ops](/guide/daily-ops).
+
+### Funnel and posting activity
+
+The funnel shows the share of cohort signups reaching each stage, from signup through graduation. Directly under it, the **posting activity strip** shows the raw layer behind the posts stage: who's posting, how many posts are pending review, and how many are countable right now.
 
 <Frame caption="Posting activity behind the funnel's posts stage">
   ![Posting activity strip](https://intent-tortoise-231.convex.cloud/api/storage/82d74e42-9cc4-43c2-ad9e-33992a14122f)
 </Frame>
 
-**Verdicts and requirements** splits the cohort by outcome (pass, in progress, unverified, fail) and shows per-requirement completion, which is how you find the step people get stuck on. A **PEND** badge means that number isn't fully trusted yet.
+### Funnel trends
+
+The same funnel over time: week-over-week and month-over-month movement, for the question the snapshot can't answer (is this getting better or worse).
+
+<Frame caption="Funnel trends">
+  ![Funnel trends](https://www.joincharacterstudio.com/docs/program-03-funnel-trends.png)
+</Frame>
+
+### Verdicts and requirements
+
+The cohort split by outcome (pass, in progress, unverified, fail) plus per-requirement completion, which is how you find the step people get stuck on. A **PEND** badge means that number isn't fully trusted yet.
 
 <Frame caption="Verdict distribution and requirement completion">
   ![Verdicts](https://www.joincharacterstudio.com/docs/program-04-verdicts.png)
 </Frame>
 
-**Joiners** is the roster: every applicant with their handles, progress, outreach state, and a detail view per creator. Search reaches across cohorts once you type two characters.
+### In-app activity
 
-**Payouts** is the ledger plus duplicate-account signals worth clearing before approvals. **Email engagement** and **Portal activity** show whether comms land and what creators do in their workspace.
+What creators did inside the Cantina app (characters, videos, rooms), from the daily passback. It moves on the upstream feed's schedule, so a flat number here is worth a second look before treating it as a real drop.
+
+<Frame caption="In-app activity tiles">
+  ![In-app activity](https://www.joincharacterstudio.com/docs/program-05-in-app.png)
+</Frame>
+
+### Verification health
+
+Whether social verification is actually working. This is the first stop when unverified verdicts climb, because the usual cause is verification failing rather than creators failing.
+
+<Frame caption="Verification health">
+  ![Verification health](https://www.joincharacterstudio.com/docs/program-07-verification.png)
+</Frame>
+
+### Joiners, payouts, and engagement
+
+**Joiners** is the roster: every applicant with handles, progress, outreach state, and a per-creator detail view; search reaches across cohorts after two characters. **Payouts** is the ledger plus duplicate-account signals worth clearing before approvals. **Email engagement** and **Portal activity** show whether comms land and what creators do in their workspace.
+
+<Frame caption="Portal activity: identified creators and the stages they reach">
+  ![Portal activity](https://www.joincharacterstudio.com/docs/program-11-portal-activity.png)
+</Frame>
+
+### Site previews
+
+Every creator-facing screen as one-click preview links with mock data, grouped by program version. The same list is public at `joincharacterstudio.com/previews` for sharing with ad creators.
+
+<Frame caption="The Site previews tab">
+  ![Site previews](https://www.joincharacterstudio.com/docs/tab-previews.png)
+</Frame>
 
 <Info>
   The full section-by-section tutorial with every screenshot lives in the staff handbook at `joincharacterstudio.com/docs`, behind the same Google sign-in as the dashboard.
