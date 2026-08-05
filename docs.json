@@ -36,12 +36,22 @@
         ]
       },
       {
+        "group": "The Portal",
+        "icon": "browser",
+        "pages": [
+          "portal/why-the-portal",
+          "portal/tour",
+          "portal/helping-creators"
+        ]
+      },
+      {
         "group": "Ambassador Guide",
         "icon": "compass",
         "pages": [
           "guide/dashboard",
           "guide/daily-ops",
-          "guide/faq"
+          "guide/faq",
+          "guide/slack-requests"
         ]
       },
       {
