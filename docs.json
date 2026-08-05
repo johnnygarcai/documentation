@@ -104,7 +104,7 @@
     "socials": {
     }
   },
-  "description": "The Cantina Character Studio ambassador hub: how the creator program works, how to read the dashboard, and what shipped in every release.",
+  "description": "The current state of the Character Studio portal and program: live updates as things ship, every creator-facing screen, and the ambassador guides for supporting creators from any cohort.",
   "appearance": {
     "default": "dark"
   }
