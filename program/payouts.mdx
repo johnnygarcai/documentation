@@ -1,0 +1,52 @@
+---
+title: "How payouts work"
+description: "The rails, the flow from pending to paid, and what creators experience"
+icon: "money-bill-transfer"
+---
+
+Money is the part of the program where mistakes are hardest to undo, so the pipeline is deliberately slow and human-gated. Understanding it helps you answer the most common creator question: "where's my money?"
+
+## The life of a payout
+
+<Steps>
+  <Step title="Pending">
+    When a creator earns something (a bonus lands, posts qualify), the system queues a payout row. It's visible in the dashboard's payout ledger, and money has not moved.
+  </Step>
+  <Step title="Approved">
+    A reviewer approves the row in the dashboard. This is the human check before anything is sent, and approval is limited to operators.
+  </Step>
+  <Step title="Sent">
+    An operator runs the send. The actual money movement is deliberately behind operator access so nobody can trigger it with a stray click.
+  </Step>
+  <Step title="Paid or failed">
+    The payment provider settles it and the status updates automatically. Failures (like a mistyped payout email) surface with a reason so the creator can fix it.
+  </Step>
+</Steps>
+
+## The two rails
+
+The program has two payout rails built and validated, and every payout row records which one it used.
+
+**PayPal** is the live default. The creator types their PayPal email in the portal and money lands in their PayPal balance shortly after a send. It's cheap (about \$1 per US payout) and familiar, and the first real payouts went through it.
+
+**SideShift Connect** is fully built and validated as the scale rail. Creators set it up through an embedded widget that handles identity verification and US tax forms automatically, which matters as the program grows: at thousands of creators a month, collecting tax forms by hand stops being a side task. The tradeoff is a few extra minutes of first-time setup for the creator (ID \+ bank link) versus typing an email.
+
+<Note>
+  Which rail a cohort uses is a program decision made per cohort, and both rails stay available. From the ambassador side the experience is identical: the ledger, the statuses, and the approval flow are the same either way.
+</Note>
+
+## What creators ask, and what to tell them
+
+<AccordionGroup>
+  <Accordion title="Where's my payout?">
+    Check the payout ledger in the dashboard for their row and its status. Pending means earned and queued; approved means cleared for the next send; paid means the provider settled it. If it's been paid and they don't see it, check which rail and have them check that account (PayPal balance, or their SideShift wallet).
+  </Accordion>
+
+  <Accordion title="My payout failed">
+    The row shows a failure reason, most often a payout email typo. Have them re-check their payout method in the portal, then flag the row for ops to retry.
+  </Accordion>
+
+  <Accordion title="Why is my bonus not showing?">
+    Bonuses queue when the underlying requirement is fully met and verified. The most common gap: posts count toward floors and bounties once they're approved in the review queue, so a pending-review post can make a met requirement look unmet. Credit applies retroactively when the queue is worked.
+  </Accordion>
+</AccordionGroup>
