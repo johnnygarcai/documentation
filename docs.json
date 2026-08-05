@@ -60,6 +60,14 @@
         "pages": [
           "updates/changelog"
         ]
+      },
+      {
+        "group": "Archive",
+        "icon": "box-archive",
+        "pages": [
+          "archive/original-sprint",
+          "archive/portal-origins"
+        ]
       }
     ]
   },

@@ -1,0 +1,31 @@
+---
+title: "How the portal took shape"
+description: "The June redesign that set the portal's design language, and the decisions that stuck"
+icon: "compass-drafting"
+---
+
+The portal you see today traces back to a redesign in early June 2026, when it went from a functional page of uniform cards to the editorial, mission-control feel it still has. This page is the why behind the look, and the small decisions that quietly make it work, because knowing them helps you answer "why does it do that?" questions with confidence.
+
+## The design goal
+
+**A creator should never have to ask where they stand.** Everything else followed from that. The redesign put the sprint's status front and center as an oversized day counter with a day-by-day grid, gave every section a number and a clean divider so the page reads top to bottom like a printed dashboard, and added a side navigation on desktop that tracks where you are as you scroll. The current portal's numbered sections, stage banner, and progress-first layout are direct descendants.
+
+## Decisions that still matter day to day
+
+**Sign-in is a one-time email code, no password.** The code input brings up the number keyboard on phones and iOS offers the code straight from the email, one tap. There's a resend button with a cooldown so nobody gets stranded. When a creator says they can't get in, the answer is almost always which inbox they're checking, because the code goes to their application email.
+
+**Account verification is a bio code, and handles are forgiving.** Type the handle with or without the @, in any capitalization, and it works: the portal normalizes it, the backend normalizes it again, and the lookup is case-insensitive on top. That triple layer exists because iPhones silently capitalize the first letter of handle inputs, which used to break verification invisibly. The portal also kills auto-capitalization on that field outright.
+
+**Mobile is the primary device.** Creators post from phones, so the details lean mobile: the copy button for the bio code is finger-sized and flashes a real "Copied" confirmation (there's no hover tooltip on a phone), the day grid wraps cleanly on small screens, and every screen works in one column.
+
+**Thumbnails fail gracefully.** TikTok and Instagram image links expire on their schedule, not ours. When one dies, the post row shows the platform's glyph rather than a broken-image icon. If a creator's post list looks icon-heavy, that's the CDN expiring links, and it's cosmetic.
+
+**Honesty about data lag, in the UI itself.** The support section tells creators how often counts refresh and to give a stuck number a few hours before worrying. That one note, kept current ever since, is the difference between a creator waiting calmly and a panicked support message.
+
+## What changed since
+
+The June portal was built for the 14-day sprint: one stage, seven requirements, one payout. The July three-stage program brought the stage banner, the \$40 setup tracker, the Bonus Ramp weekly view, the Learn tab with the paid curriculum, and the Official view for graduates. The design language never changed, which is why a cohort 1 creator and a cohort 8R creator would both recognize the portal instantly.
+
+<Note>
+  Want the current portal in full? [Why the portal exists](/portal/why-the-portal) covers the strategy and [The portal, state by state](/portal/tour) walks every screen with screenshots.
+</Note>
