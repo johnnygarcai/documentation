@@ -13,6 +13,14 @@ mode: "center"
 
 ---
 
+<Update label="August 7, 2026" description="Faster, more accurate identity matching">
+  **Account matching now runs hourly instead of once a day.** Room joins and app downloads used to take up to a full day to show up anywhere on the dashboard. The sync behind that now runs every hour, so a creator's Cantina identity shows up on the roster within the hour instead of the next morning.
+
+  **The roster now tells "pending" apart from "not linked."** A creator whose account had been matched but hadn't picked a username yet used to read exactly like someone with no account at all, both showing "not linked yet." That row now reads "username pending," so ambys can tell at a glance who just needs a nudge to finish choosing a handle.
+
+  **Outreach lists got more accurate.** Creators with a matched account but no username yet were sometimes miscategorized as never having downloaded the app. They now correctly land in the room-outreach list instead of the download-outreach list, so nobody gets a wrong "go download the app" nudge.
+</Update>
+
 <Update label="August 6, 2026" description="A gentler way to offboard">
   **Blocking isn't the only way to take someone out of the program anymore.** It used to be: block a creator and their whole post history got dropped from the numbers retroactively, rewriting lifetime views and CPM, even for people who simply moved on in good standing. A new `left_program` tag (applied from the same tag controls staff already use) offboards without the rewrite: tracking pauses on their existing posts, their handles come out of discovery, and payouts stop, but their post history stays put in the dashboards. Blocking still exists and still means what it always meant, for the ineligible and fraud cases that need the harsher treatment.
 
