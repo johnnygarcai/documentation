@@ -13,6 +13,12 @@ mode: "center"
 
 ---
 
+<Update label="August 9, 2026" description="Payout widget escape hatch, blocking from the creator modal">
+  **The payout widget's mobile fix got a fallback.** Even with the frame that only grows and never shrinks, some creators were still hitting KYC fields they couldn't reach inside the embedded form. The widget now also offers an "Open it full screen" link, same session and same progress, just handed off to the browser's own scrolling instead of the iframe's.
+
+  **Block and Unblock now work from the creator detail modal.** Search is how ambys usually reach a creator, but a cross-cohort search match doesn't have a roster row, so there was no way to block someone found that way. The modal now carries the same Block/Unblock control the roster tables have.
+</Update>
+
 <Update label="August 8, 2026" description="Payout form fixed on mobile, welcome email polish">
   **The payout widget's KYC step is reachable on mobile now.** The embedded payout form could report a short height on an early step, then need much more room once someone reached identity verification, and the frame wasn't growing to match, clipping the form below the fold with no way to scroll down to it. The frame now only grows and never shrinks, so the form is never cut off partway through.
 
