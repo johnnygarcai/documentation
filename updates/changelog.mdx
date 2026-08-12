@@ -13,6 +13,16 @@ mode: "center"
 
 ---
 
+<Update label="August 12, 2026" description="Posts still in review stop reading as a failed sprint, and real payout verification status">
+  **A creator whose posts are still in our review queue no longer sees a failed sprint.** If their Get Set Up window closed while we still had posts of theirs waiting on review, the portal's earnings card read "\$0 · Not completed" and "Sprint requirements not met", and it hid the payout method. That was our queue, not their failure: posts count by when they were published, so one we approve later still counts, and it can still flip them to a pass and pay them. The card now says how many posts are awaiting our review and that approving them can complete the sprint, and the payout method stays reachable so nobody is left without a wallet linked at the moment their money lands. Worth remembering when a creator writes in upset about a zero: check first whether we are the ones holding their posts.
+
+  **Approving a payout is now blocked while posts from that period are still in review.** On Get Set Up and Bonus Ramp, a payout row freezes once it's approved, so a post approved afterward lost its \$2.50 for good and could cost the creator the \$20 bounty. The dashboard now stops that approval and says why, with a separate "Approve anyway" button for the cases that genuinely need to go through, which gets recorded. The habit to build: clear the review queue first, then approve.
+
+  **"Check KYC" on the creator detail panel shows real payout verification status.** Until now we stored that a creator had a payout account and nothing about whether their identity verification actually passed, so every "it won't accept my address" ticket got answered with a guess. The panel now pulls the live status on demand, along with the attempt count, the country, and a resume link that's safe to send so the creator can pick up where they left off.
+
+  **A green payout checkmark in the portal is not proof a creator can get paid.** Payout setup is marked complete the moment someone opens the payout widget, so a creator whose verification was later rejected still sees a green check. That hasn't changed yet, and the new panel is now how you find out the truth. One caution when you use it: the blocker text in the red box comes straight from the payment provider and is written for operators, so it can read like an accusation. Tell the creator what to fix in your own words rather than pasting it.
+</Update>
+
 <Update label="August 10, 2026" description="Portal lockout fixed, the \$40 bonus pays itself, clearer program terms">
   **A rare portal lockout is fixed.** A creator who deleted a blocked Cantina account and made a new one on the same email found their portal broken on every load. That path is now self-healing: the portal always reads the freshest linked account, so a fresh start never gets stuck behind an abandoned one.
 
