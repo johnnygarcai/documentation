@@ -14,17 +14,17 @@ mode: "center"
 ---
 
 <Update label="August 12, 2026" description="Posts still in review stop reading as a failed sprint, and real payout verification status">
-  **A creator whose posts are still in our review queue no longer sees a failed sprint.** If their Get Set Up window closed while we still had posts of theirs waiting on review, the portal's earnings card read "\$0 · Not completed" and "Sprint requirements not met", and it hid the payout method. That was our queue, not their failure: posts count by when they were published, so one we approve later still counts, and it can still flip them to a pass and pay them. The card now says how many posts are awaiting our review and that approving them can complete the sprint, and the payout method stays reachable so nobody is left without a wallet linked at the moment their money lands. Worth remembering when a creator writes in upset about a zero: check first whether we are the ones holding their posts.
+  **The portal no longer reports a failed sprint while posts are still in our review queue.** When a Get Set Up window closed with posts still awaiting review, the earnings card read "\$0 · Not completed" and "Sprint requirements not met" and hid the payout method. That's our queue, not a failed sprint: posts count by when they were published, so one approved later still counts, and it can still flip the sprint to a pass and pay out. The card now shows how many posts are awaiting our review and that approval can complete the sprint, and the payout method stays reachable so a passing sprint never lands without a wallet linked. When a ticket comes in about a surprise zero, check first whether the posts are sitting in our review queue.
 
-  **Approving a payout is now blocked while posts from that period are still in review.** On Get Set Up and Bonus Ramp, a payout row freezes once it's approved, so a post approved afterward lost its \$2.50 for good and could cost the creator the \$20 bounty. The dashboard now stops that approval and says why, with a separate "Approve anyway" button for the cases that genuinely need to go through, which gets recorded. The habit to build: clear the review queue first, then approve.
+  **Approving a payout is now blocked while posts from that period are still in review.** On Get Set Up and Bonus Ramp, a payout row freezes once it's approved, so a post approved afterward lost its \$2.50 for good and could cost the \$20 bounty. The dashboard now stops that approval and says why, with a separate "Approve anyway" button for the cases that genuinely need to go through, which gets recorded. The habit to build: clear the review queue first, then approve.
 
-  **"Check KYC" on the creator detail panel shows real payout verification status.** Until now we stored that a creator had a payout account and nothing about whether their identity verification actually passed, so every "it won't accept my address" ticket got answered with a guess. The panel now pulls the live status on demand, along with the attempt count, the country, and a resume link that's safe to send so the creator can pick up where they left off.
+  **"Check KYC" on the creator detail panel shows real payout verification status.** Until now the system stored that a payout account existed and nothing about whether identity verification actually passed, so every "it won't accept my address" ticket got answered with a guess. The panel now pulls the live status on demand, along with the attempt count, the country, and a resume link that's safe to pass along so verification can resume where it left off.
 
-  **A green payout checkmark in the portal is not proof a creator can get paid.** Payout setup is marked complete the moment someone opens the payout widget, so a creator whose verification was later rejected still sees a green check. That hasn't changed yet, and the new panel is now how you find out the truth. One caution when you use it: the blocker text in the red box comes straight from the payment provider and is written for operators, so it can read like an accusation. Tell the creator what to fix in your own words rather than pasting it.
+  **The portal's green payout checkmark is not proof verification passed.** Payout setup is marked complete the moment the payout widget is opened, so a verification that was later rejected still shows a green check. That hasn't changed yet, and the new panel is now where the real status lives. One caution when you use it: the blocker text in the red box comes straight from the payment provider and is written for operators, so it can read like an accusation. Explain what needs fixing in your own words rather than pasting it.
 </Update>
 
 <Update label="August 10, 2026" description="Portal lockout fixed, the \$40 bonus pays itself, clearer program terms">
-  **A rare portal lockout is fixed.** A creator who deleted a blocked Cantina account and made a new one on the same email found their portal broken on every load. That path is now self-healing: the portal always reads the freshest linked account, so a fresh start never gets stuck behind an abandoned one.
+  **A rare portal lockout is fixed.** When a blocked Cantina account was deleted and a new one was created on the same email, the portal broke on every load. That path is now self-healing: the portal always reads the freshest linked account, so a fresh start never gets stuck behind an abandoned one.
 
   **The \$40 Get Set Up bonus now pays on its own.** It used to need an amby to click a button per creator once someone qualified, and that worklist had quietly let \$480 sit unpaid. The \$40 now lands as a pending payout automatically, the same way every other earning does, and the dashboard just shows where it stands in the queue.
 
@@ -32,7 +32,7 @@ mode: "center"
 </Update>
 
 <Update label="August 9, 2026" description="Payout widget escape hatch, blocking from the creator modal">
-  **The payout widget's mobile fix got a fallback.** Even with the frame that only grows and never shrinks, some creators were still hitting KYC fields they couldn't reach inside the embedded form. The widget now also offers an "Open it full screen" link, same session and same progress, just handed off to the browser's own scrolling instead of the iframe's.
+  **The payout widget's mobile fix got a fallback.** Even with the frame that only grows and never shrinks, the embedded form could still leave KYC fields out of reach on some devices. The widget now also offers an "Open it full screen" link, same session and same progress, just handed off to the browser's own scrolling instead of the iframe's.
 
   **Block and Unblock now work from the creator detail modal.** Search is how ambys usually reach a creator, but a cross-cohort search match doesn't have a roster row, so there was no way to block someone found that way. The modal now carries the same Block/Unblock control the roster tables have.
 </Update>
@@ -44,11 +44,11 @@ mode: "center"
 </Update>
 
 <Update label="August 7, 2026" description="Faster, more accurate identity matching">
-  **Account matching now runs hourly instead of once a day.** Room joins and app downloads used to take up to a full day to show up anywhere on the dashboard. The sync behind that now runs every hour, so a creator's Cantina identity shows up on the roster within the hour instead of the next morning.
+  **Account matching now runs hourly instead of once a day.** Room joins and app downloads used to take up to a full day to show up anywhere on the dashboard. The sync behind that now runs every hour, so Cantina identities show up on the roster within the hour instead of the next morning.
 
-  **The roster now tells "pending" apart from "not linked."** A creator whose account had been matched but hadn't picked a username yet used to read exactly like someone with no account at all, both showing "not linked yet." That row now reads "username pending," so ambys can tell at a glance who just needs a nudge to finish choosing a handle.
+  **The roster now tells "pending" apart from "not linked."** An account that had been matched but had no username picked yet used to read exactly like no account at all, both showing "not linked yet." Those rows now read "username pending," so ambys can tell at a glance where the only missing step is choosing a handle.
 
-  **Outreach lists got more accurate.** Creators with a matched account but no username yet were sometimes miscategorized as never having downloaded the app. They now correctly land in the room-outreach list instead of the download-outreach list, so nobody gets a wrong "go download the app" nudge.
+  **Outreach lists got more accurate.** Matched accounts with no username yet were sometimes miscategorized as never having downloaded the app. They now correctly land in the room-outreach list instead of the download-outreach list, so the wrong "go download the app" nudge never goes out.
 </Update>
 
 <Update label="August 6, 2026" description="A gentler way to offboard">
@@ -56,9 +56,9 @@ mode: "center"
 
   **Bot accounts are off the remove-from-room worklist.** A handful of character and bot accounts (no real email, no activity, just a placeholder ID) had been slipping into our creator data and landing on the remove-from-sprint-room worklist alongside real people. That's fixed at the source now, and the handful that had already slipped through were cleaned out.
 
-  **The pre-join screen now speaks v4.** Before a creator's Cantina data first syncs, the one screen they see was still reciting the retired 14-day sprint, telling them that joining the room starts a 14-day clock, even though they're enrolled in the current v4 program. It now shows the real v4 terms: four setup steps, a 7-day window that starts once setup is done, and the \$40 bonus at the 8-post floor. This was the largest group ever affected by stale copy, roughly 950 not-yet-joined creators across cohorts 6 through 8r, so it's a meaningful fix. The footer's copyright year got straightened out on the same pass.
+  **The pre-join screen now speaks v4.** Before Cantina data first syncs, the one screen the portal shows was still reciting the retired 14-day sprint, saying that joining the room starts a 14-day clock, even though everyone seeing it is enrolled in the current v4 program. It now shows the real v4 terms: four setup steps, a 7-day window that starts once setup is done, and the \$40 bonus at the 8-post floor. This was the largest group ever affected by stale copy, roughly 950 not-yet-joined creators across cohorts 6 through 8r, so it's a meaningful fix. The footer's copyright year got straightened out on the same pass.
 
-  **The applicants roster shows live progress now.** Room joins only reach the dashboard once a day, so a creator could already be active in the room with nothing to show for it on the roster yet. Each row now carries chips for socials verification, payout account, and post count, pulled from our own data in real time, so creators who haven't synced yet are never a blank space.
+  **The applicants roster shows live progress now.** Room joins only reach the dashboard once a day, so room activity could run a full day ahead of what the roster showed. Each row now carries chips for socials verification, payout account, and post count, pulled from our own data in real time, so rows that haven't synced yet are never a blank space.
 </Update>
 
 <Update label="August 5, 2026" description="The docs hub and the portal deep-dive">
