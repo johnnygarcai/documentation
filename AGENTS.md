@@ -31,3 +31,5 @@
 
 {/* Define what should and shouldn't be documented */}
 {/* Example: Don't document internal admin features */}
+
+- The changelog (`updates/changelog.mdx`) covers systems and program changes only. Never frame an entry around an individual creator's situation or story ("A creator who deleted...", "some creators were hitting..."); make the product, program, or dashboard the subject and state what it did and what it does now. Aggregate numbers are fine; anecdotes are not, and creator names, emails, and handles never appear.
