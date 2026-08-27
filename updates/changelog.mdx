@@ -13,6 +13,10 @@ mode: "center"
 
 ---
 
+<Update label="August 27, 2026" description="The completion email keeps sending while program nudge emails are paused">
+  **The completion email is now exempt from the program nudge pause.** The August 26 entry described one switch that stops the current program's sends, and that switch also caught the note that goes out the moment a sprint is recorded as complete. That note is different in kind from the rest of them: it is not a pitch to go further into a program that is being retired, it confirms work a creator already finished and points them at their payout details. Holding it meant someone could finish the program and hear nothing back while their money was waiting. It now sends whether or not the pause is on, and follows only the usual suppression rules: opted out, blocked, bounced, or filed a spam complaint. Everything else the pause covers stays paused, including the sprint welcome, the Official Program welcome, the character-created note, and the outreach buttons on the dashboard. Worth knowing for tickets: a creator who has just completed should still get their completion note while the pause is on, so a missing one is a real question rather than something the pause explains.
+</Update>
+
 <Update label="August 26, 2026" description="Handle search on the dashboard reaches people it used to miss, one switch for program nudge emails, forum alerts for the whole ops team">
   **Handle search on the dashboard now survives a pasted "@".** Cantina's room request list prints every handle with a leading "@", and no handle is stored with it, so pasting one straight into search matched nothing and read as "this person never applied," which is the worst thing to get wrong while working through join requests. A leading "@" is now stripped in all three places the search is built: the portal search box, the identity resolver, and the cohort search. The habit to build: paste the handle exactly as you copied it rather than cleaning it up first.
 
