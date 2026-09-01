@@ -13,6 +13,14 @@ mode: "center"
 
 ---
 
+<Update label="September 1, 2026" description="The Social tab's post table opens on the posts behind a chart spike">
+  **The Social tab now shows the posts behind an impressions spike.** The chart counts approved posts, but the table underneath opened on Pending and sorted oldest first, so the rows on screen were never the ones the chart was describing. The table now opens on Approved, sorted by most views, so a spike and the posts that caused it are on the same screen. The review queue is unchanged: choosing Pending still sorts oldest first so the longest-waiting work stays on top, and Denied still opens newest first.
+
+  **The row cap no longer hides the biggest posts.** The table returns a capped number of rows, and that cap used to be applied newest first, before the sort you picked was applied, so a high-view post from earlier in the range could be cut before it ever reached the screen. Ordering now runs across the whole filtered range and the cap is applied afterwards, so Most views really does return the top posts for the dates selected rather than the top of the most recent batch. The totals above the table were always counted across everything and are unaffected. Worth knowing: if you looked at a spike recently and could not find a post big enough to explain it, that view is worth another pass.
+
+  **The date filters and the chart labels now agree on the day.** The date boxes and the chart both read days in UTC, and the "to" date includes the whole day selected rather than stopping just short of its end. A post at the edge of a range now lands on the same day in the chart and in the table.
+</Update>
+
 <Update label="August 27, 2026" description="The completion email keeps sending while program nudge emails are paused">
   **The completion email is now exempt from the program nudge pause.** The August 26 entry described one switch that stops the current program's sends, and that switch also caught the note that goes out the moment a sprint is recorded as complete. That note is different in kind from the rest of them: it is not a pitch to go further into a program that is being retired, it confirms work a creator already finished and points them at their payout details. Holding it meant someone could finish the program and hear nothing back while their money was waiting. It now sends whether or not the pause is on, and follows only the usual suppression rules: opted out, blocked, bounced, or filed a spam complaint. Everything else the pause covers stays paused, including the sprint welcome, the Official Program welcome, the character-created note, and the outreach buttons on the dashboard. Worth knowing for tickets: a creator who has just completed should still get their completion note while the pause is on, so a missing one is a real question rather than something the pause explains.
 </Update>
